@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 String name = pdfName.get(position);
                 Intent intent = new Intent(getApplicationContext(), PdfOpener.class);
                 intent.putExtra("pdf", name);
-                startActivity(intent);
+                startActivity(intent);//intent to pdf opener class 
             }
         });
     }
